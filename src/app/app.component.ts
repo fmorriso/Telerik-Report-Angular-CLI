@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = "Report Viewer";
+  title = 'Report Viewer';
   viewerContainerStyle = {
     position: 'absolute',
     top: '37px',
