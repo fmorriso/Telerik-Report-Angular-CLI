@@ -4,10 +4,13 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve -o --vendor-chunk --extract-css --prod",
-    "build": "ng build",
+    "build": "ng build --progress --verbose --vendor-chunk --extract-css",
+    "build-prod": "ng build --progress --verbose --vendor-chunk --extract-css --prod",
+    "start": "ng serve --open --verbose --vendor-chunk --extract-css",
+    "start-prod": "ng serve --open --verbose --vendor-chunk --extract-css --prod",
     "test": "ng test",
-    "lint": "ng lint",
+    "lint": "ng lint --typeCheck --format stylish",
+    "lint-fix": "ng lint --format stylish --fix",
     "e2e": "ng e2e"
   },
   "private": true,
