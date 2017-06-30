@@ -9,4 +9,4 @@ out
 gen
 /node_modules/
 .gitignore
-/dist/
+#/dist/
