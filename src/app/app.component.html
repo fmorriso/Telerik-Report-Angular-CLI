@@ -11,7 +11,7 @@
            [ready]="ready"
            [viewerToolTipOpening]="viewerToolTipOpening">
 </tr-viewer>
-<button (click)="viewer1.refreshReport()">Refresh</button>
-<button (click)="viewer1.commands.print.exec()">Print</button>
+<button class="btn btn-primary" (click)="viewer1.refreshReport()">Refresh</button>
+<button class="btn btn-success"    (click)="viewer1.commands.print.exec()">Print</button>
 <span>&nbsp;</span>
-<span class="h5 bg-primary"> using Angular version: {{angularVersion}}</span>
+<span class="h5 bg-primary">using Angular version: {{angularVersion}}</span>
