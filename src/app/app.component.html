@@ -1,15 +1,17 @@
-<tr-viewer #viewer1 
-    [containerStyle]="viewerContainerStyle"
-    [serviceUrl]="'http://demos.telerik.com/reporting/api/reports/'"
-    [reportSource]="{
-        report: 'Telerik.Reporting.Examples.CSharp.ReportCatalog, CSharp.ReportLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null',
-        parameters: {}
-    }"
-    [viewMode]="'INTERACTIVE'"
-    [scaleMode]="'SPECIFIC'"
-    [scale]="1.0"
-    [ready]="ready"
-    [viewerToolTipOpening]="viewerToolTipOpening">
+<tr-viewer #viewer1
+           [containerStyle]="viewerContainerStyle"
+           [serviceUrl]="'http://demos.telerik.com/reporting/api/reports/'"
+           [reportSource]="{
+                report: 'Telerik.Reporting.Examples.CSharp.ReportCatalog, CSharp.ReportLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null',
+                parameters: {}
+            }"
+           [viewMode]="'INTERACTIVE'"
+           [scaleMode]="'SPECIFIC'"
+           [scale]="1.0"
+           [ready]="ready"
+           [viewerToolTipOpening]="viewerToolTipOpening">
 </tr-viewer>
 <button (click)="viewer1.refreshReport()">Refresh</button>
 <button (click)="viewer1.commands.print.exec()">Print</button>
+<span>&nbsp;</span>
+<span class="h5 bg-primary"> using Angular version: {{angularVersion}}</span>

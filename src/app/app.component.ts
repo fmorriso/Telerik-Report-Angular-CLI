@@ -1,12 +1,14 @@
-import {Component} from '@angular/core';
+import {Component, OnInit, VERSION} from '@angular/core';
 
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
     title = 'Report Viewer';
+    angularVersion: string;
+
     viewerContainerStyle = {
         position: 'absolute',
         top: '37px',
@@ -16,6 +18,16 @@ export class AppComponent {
         overflow: 'hidden',
         ['font-family']: 'ms sans serif'
     };
+
+    viewerContainerStyle2 = {
+        position: 'relative',
+        width: '100%',
+        height: '100%'
+    };
+
+    ngOnInit() {
+        this.angularVersion = VERSION.full;
+    }
 
     ready() {
         console.log('ready');
